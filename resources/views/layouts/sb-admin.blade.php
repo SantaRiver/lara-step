@@ -17,7 +17,7 @@
         rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    @vite('resources/scss/sb-admin-2.scss')
+    @vite('resources/scss/app.scss')
 
 </head>
 
