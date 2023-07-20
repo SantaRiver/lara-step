@@ -48,6 +48,7 @@ class HomeController extends Controller
         $totalPaid = Order::query()->where('isPaid', '=', 'true')->count();
         $countByType = Order::query()
             ->select(DB::raw("ticket_type, count(*)"))
+            ->where('isPaid', '=', true)
             ->groupBy('ticket_type')
             ->get();
 
